@@ -26,10 +26,12 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+        working-directory: rutas-verdes-vlc
       - run: npm run build
+        working-directory: rutas-verdes-vlc
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: rutas-verdes-vlc/dist
       - id: deployment
         uses: actions/deploy-pages@v4
