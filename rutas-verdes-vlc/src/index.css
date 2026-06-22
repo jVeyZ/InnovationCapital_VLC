@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --leaflet-tile-filter: brightness(0.95) saturate(0.8);
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.route-marker-green {
+  filter: hue-rotate(100deg) saturate(200%);
+}
+
+.leaflet-popup-content {
+  font-family: inherit;
+}
